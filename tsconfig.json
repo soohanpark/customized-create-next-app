@@ -18,4 +18,11 @@
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
+  // for server
+  // "ts-node": {
+  //   "transpileOnly": true,
+  //   "compilerOptions": {
+  //     "module": "commonjs"
+  //   }
+  // }
 }
