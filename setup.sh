@@ -1,8 +1,16 @@
+# Clean up
 rm -rf ./.git
 rm -rf ./setup.sh
 
-git init
-git add .
-git commit -m "Init."
+# Set
+currPath=$(pwd)
+dirname=${currPath##*/}
+echo "# $dirname" > ./README.md
 
+# Init
+git init
+git add README.md
+git commit -m "Init"
+
+# Done
 echo "Done!"
